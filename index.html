@@ -120,7 +120,13 @@
               <span class="d-inline d-sm-none"><br /></span>
               <strong><mark>First one is free!</mark></strong>
             </p>
-            <button class="btn btn-lg btn-success">Sign Up!</button>
+            <button
+              class="btn btn-lg btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
+            >
+              Sign Up!
+            </button>
             <p class="text-muted">
               <small
                 >You must be over 18 to sign up to our service. Please, drink
@@ -287,6 +293,66 @@
         </div>
       </section>
     </article>
+
+    <!-- Modal -->
+
+    <div class="modal" tabindex="-1" id="signUpModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="repeatPassword" class="form-label"
+                  >Repeat Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="repeatPassword"
+                  placeholder="Repeat Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /div -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
